@@ -45,7 +45,7 @@ endif
 
 
 collatz-tests:
-	git clone https://github.com/CS373-Fall-2016/collatz-tests.git
+	git clone https://github.com/cs329e-spring-2017/collatz-tests.git
 
 Collatz.html: Collatz.py
 	pydoc3 -w Collatz
