@@ -44,9 +44,6 @@ else                                   # UTCS
 endif
 
 
-.pylintrc:
-	$(PYLINT) --disable=locally-disabled --reports=no --generate-rcfile > $@
-
 collatz-tests:
 	git clone https://github.com/CS373-Fall-2016/collatz-tests.git
 
@@ -57,14 +54,10 @@ Collatz.log:
 	git log > Collatz.log
 
 RunCollatz.tmp: RunCollatz.in RunCollatz.out RunCollatz.py
-	-$(PYLINT) Collatz.py
-	-$(PYLINT) RunCollatz.py
 	$(PYTHON) RunCollatz.py < RunCollatz.in > RunCollatz.tmp
 	diff RunCollatz.tmp RunCollatz.out
 
 TestCollatz.tmp: TestCollatz.py
-	-$(PYLINT) Collatz.py
-	-$(PYLINT) TestCollatz.py
 	$(COVERAGE) run    --branch TestCollatz.py >  TestCollatz.tmp 2>&1
 	$(COVERAGE) report -m                      >> TestCollatz.tmp
 	cat TestCollatz.tmp
