@@ -48,7 +48,7 @@ collatz-tests:
 	git clone https://github.com/cs329e-spring-2017/collatz-tests.git
 
 Collatz.html: Collatz.py
-	pydoc3 -w Collatz
+	$(PYDOC) -w Collatz
 
 Collatz.log:
 	git log > Collatz.log
