@@ -84,6 +84,12 @@ if __name__ == "__main__":
 % coverage-3.5 run --branch TestCollatz.py >  TestCollatz.out 2>&1
 
 
+% cat TestCollatz.out
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+OK
+
 
 % coverage-3.5 report -m                   >> TestCollatz.out
 
@@ -92,8 +98,7 @@ if __name__ == "__main__":
 % cat TestCollatz.out
 .......
 ----------------------------------------------------------------------
-Ran 7 tests in 0.001s
-
+Ran 7 tests in 0.000s
 OK
 Name             Stmts   Miss Branch BrPart  Cover   Missing
 ------------------------------------------------------------
