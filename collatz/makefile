@@ -28,11 +28,11 @@ else ifeq ($(CI), true)                # Travis CI
     PYDOC    := pydoc3
     AUTOPEP8 := autopep8
 else ifeq ($(shell uname -p), unknown) # Docker
-    PYTHON   := python3.5
+    PYTHON   := python                # on my machine it's python
     PIP      := pip3.5
     PYLINT   := pylint
     COVERAGE := coverage-3.5
-    PYDOC    := pydoc3.5
+    PYDOC    := python -m pydoc        # on my machine it's pydoc 
     AUTOPEP8 := autopep8
 else                                   # UTCS
     PYTHON   := python3.5
