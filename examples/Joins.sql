@@ -23,7 +23,7 @@ insert into S values (4, 8);
 insert into S values (4, 9);
 
 # ------------------------------------------------------------------------
-select "*** select * from R ***" as "Select";
+select "*** select * from R *** ---1---" as "Select";
 select * from R;
 select "*** select * from R ***" as "Select";
 select * from S;
@@ -38,7 +38,7 @@ select count(*) from R cross join S;
 select       *  from R cross join S;
 
 # ------------------------------------------------------------------------
-select "*** select * from R ***" as "Select";
+select "*** select * from R *** ---2---" as "Select";
 select * from R;
 select "*** select * from S ***" as "Select";
 select * from S;
@@ -62,7 +62,7 @@ select count(*) from R inner join S on R.A = S.B;
 select       *  from R inner join S on R.A = S.B;
 
 # ------------------------------------------------------------------------
-select "*** select * from R ***" as "Select";
+select "*** select * from R *** ---3---" as "Select";
 select * from R;
 select "*** select * from S ***" as "Select";
 select * from S;
@@ -75,7 +75,7 @@ select count(*) from R left join S on R.A = S.B;
 select       *  from R left join S on R.A = S.B;
 
 # ------------------------------------------------------------------------
-select "*** select * from R ***" as "Select";
+select "*** select * from R *** ---4---" as "Select";
 select * from R;
 select "*** select * from S ***" as "Select";
 select * from S;
@@ -88,7 +88,7 @@ select count(*) from R right join S on R.A = S.B;
 select       *  from R right join S on R.A = S.B;
 
 # ------------------------------------------------------------------------
-select "*** select * from R ***" as "Select";
+select "*** select * from R *** ---5---" as "Select";
 select * from R;
 select "*** select * from S ***" as "Select";
 select * from S;
@@ -116,7 +116,7 @@ insert into S values (8, 3);
 insert into S values (9, 4);
 
 # ------------------------------------------------------------------------
-select "*** select * from R ***" as "Select";
+select "*** select * from R *** ---6---" as "Select";
 select * from R;
 select "*** select * from S ***" as "Select";
 select * from S;
@@ -126,7 +126,7 @@ select count(*) from R cross join S;
 select       *  from R cross join S;
 
 # ------------------------------------------------------------------------
-select "*** select * from R ***" as "Select";
+select "*** select * from R *** ---7---" as "Select";
 select * from R;
 select "*** select * from S ***" as "Select";
 select * from S;
@@ -136,7 +136,7 @@ select count(*) from R inner join S using (A);
 select       *  from R inner join S using (A);
 
 # ------------------------------------------------------------------------
-select "*** select * from R ***" as "Select";
+select "*** select * from R *** ---8---" as "Select";
 select * from R;
 select "*** select * from S ***" as "Select";
 select * from S;
@@ -146,7 +146,7 @@ select count(*) from R left join S using (A);
 select       *  from R left join S using (A);
 
 # ------------------------------------------------------------------------
-select "*** select * from R ***" as "Select";
+select "*** select * from R *** ---9---" as "Select";
 select * from R;
 select "*** select * from S ***" as "Select";
 select * from S;
@@ -156,7 +156,7 @@ select count(*) from R right join S using (A);
 select       *  from R right join S using (A);
 
 # ------------------------------------------------------------------------
-select "*** select * from R ***" as "Select";
+select "*** select * from R *** ---10---" as "Select";
 select * from R;
 select "*** select * from S ***" as "Select";
 select * from S;
@@ -184,7 +184,7 @@ insert into S values (4, 8);
 insert into S values (4, 9);
 
 # ------------------------------------------------------------------------
-select "*** select * from R ***" as "Select";
+select "*** select * from R *** ---11---" as "Select";
 select * from R;
 select "*** select * from S ***" as "Select";
 select * from S;
@@ -194,7 +194,7 @@ select count(*) from R cross join S;
 select       *  from R cross join S;
 
 # ------------------------------------------------------------------------
-select "*** select * from R ***" as "Select";
+select "*** select * from R ***---12---" as "Select";
 select * from R;
 select "*** select * from S ***" as "Select";
 select * from S;
@@ -204,7 +204,7 @@ select count(*) from R inner join S using (A);
 select       *  from R inner join S using (A);
 
 # ------------------------------------------------------------------------
-select "*** select * from R ***" as "Select";
+select "*** select * from R *** ---13---" as "Select";
 select * from R;
 select "*** select * from S ***" as "Select";
 select * from S;
@@ -214,7 +214,7 @@ select count(*) from R left join S using (A);
 select       *  from R left join S using (A);
 
 # ------------------------------------------------------------------------
-select "*** select * from R ***" as "Select";
+select "*** select * from R *** ---14---" as "Select";
 select * from R;
 select "*** select * from S ***" as "Select";
 select * from S;
